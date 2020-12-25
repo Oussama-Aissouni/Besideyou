@@ -1,0 +1,6 @@
+.sidemenu {
+  width: 260px;
+  height: 820px;
+  padding: 16px 16px 24px;
+  background-color: var(--dark-blue-grey);
+}
