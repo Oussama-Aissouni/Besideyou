@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "poppins";
+  src: url("./Fonts/Poppins-Bold.ttf");
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "poppins";
+}
+.App {
+  display: flex;
+}
+Header {
+  float: left;
+}

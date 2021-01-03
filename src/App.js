@@ -1,10 +1,12 @@
 import './App.css';
-import sideMenu from './components/Sidemenu/sideMenu';
+import SideMenu from './components/Sidemenu/sideMenu';
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      <sideMenu />
+      <SideMenu />
+      <Header/>
     </div>
   );
 }
