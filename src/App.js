@@ -9,11 +9,11 @@ import Test from './components/Test';
 function App() {
   return (
     <div className="App">
-      {/* <SideMenu />
-      <Header /> */}
+      <SideMenu />
+      {/* <Header />
       <Students />
-      {/* <Informations/>  */}
-      {/* <Test/> */}
+      <Informations/>  */}
+      {/* <Test/>*/}
     </div>
   );
 }
