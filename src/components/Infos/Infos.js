@@ -1,4 +1,4 @@
-import React ,{useState} from 'react';
+import React from 'react';
 import "./infos.css";
 import {BrowserRouter as Router , Switch , Route,Link } from 'react-router-dom';
 import Details from './Tabs/Details/Details';
@@ -10,10 +10,6 @@ import Homework from './Tabs/Homework/Homework';
 import Attitude from './Tabs/Attitude/Attitude';
 
 export default function Infos() {
-    const [active,setActive]=useState(false);
-    const toggleClass = () => {
-        setActive(!active);
-      };
     return (
         <div className="Infos-container">
             <div className="Infos-data">

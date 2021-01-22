@@ -1,43 +1,27 @@
 .students-container {
+  width: 416px;
+  height: 100%;
   position: absolute;
   overflow-y: scroll;
-  overflow-x: hidden;
 }
-/* .filter {
-  width: 416px;
-  height: 56px;
-}
-.search-box {
-  display: flex;
-  width: 172px;
-  height: 32px;
-  border: 1px solid black;
-  margin: 11px 12px;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.search-box-text {
-  margin: 8px 12px;
-  font-size: 14px;
-}
-.search-box-icon {
-  background-image: url("../../images/dropdown-arrow.png");
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  margin: 4px;
-} */
 .student {
-  width: 99.8%;
+  width: 100%;
   height: 80px;
   display: flex;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
+  border-bottom: 1px solid #f0f0f6;
+  border-right: 1px solid #f0f0f6;
 }
 .student-image {
-  border-radius: 20px !important;
+  width: 40px;
+  height: 40px;
+  margin: 20px 8px;
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 20px !important;
+}
+.student-name {
+  font-size: 14px;
+  font-weight: 500;
 }
 .student-infos {
   width: fit-content;
@@ -47,85 +31,46 @@
 .student-class {
   color: rgba(21, 26, 59, 0.5);
 }
-@media (min-width: 1200px) {
-  .students-container {
-    width: 26%;
-    left: 260px;
-    top: 49px;
-  }
-  .student-image {
-    width: 35px;
-    height: 35px;
-    margin: 20px 16px;
-  }
-  .student-name {
-    font-size: 14px;
-    font-weight: 500;
-  }
-  .student-class {
-    font-size: 14px;
-    font-weight: normal;
-  }
+
+/*DropDown*/
+.dropdown {
+  display: inline-block;
+  width: 172px;
+  border: 1px solid #f0f0f6;
 }
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .students-container {
-    width: 24%;
-    left: 240px;
-    top: 49px;
-  }
-  .student-image {
-    width: 30px;
-    height: 30px;
-    margin: 25px 12px;
-  }
-  .student-name {
-    font-size: 13px;
-    font-weight: 500;
-  }
-  .student-class {
-    font-size: 13px;
-    font-weight: normal;
-  }
+.dropdown-text {
+  display: inline-block;
+  width: 132px;
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .students-container {
-    width: 24%;
-    left: 200px;
-    top: 49px;
-  }
-  .student-image {
-    width: 30px;
-    height: 30px;
-    margin: 25px 12px;
-  }
-  .student-name {
-    font-size: 12px;
-    font-weight: 500;
-  }
-  .student-class {
-    font-size: 12px;
-    font-weight: normal;
-  }
+.dropdown-icon {
+  background-image: url("../../../src/images/dropdown-arrow.png");
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .students-container {
-    width: 22%;
-    left: 180px;
-    top: 49px;
-  }
-  .student-image {
-    width: 25px;
-    height: 25px;
-    margin: 25px 10px;
-  }
-  .student-name {
-    font-size: 11px;
-    font-weight: 500;
-  }
-  .student-class {
-    font-size: 11px;
-    font-weight: normal;
-  }
+/*End DropDown*/
+/*Search*/
+.search-box {
+  display: inline-block;
+  width: 172px;
+  border: 1px solid #f0f0f6;
 }
-@media (max-width: 575.98px) {
+.search-box-text {
+  display: inline-block;
+  width: 132px;
+}
+.search-box-icon {
+  background-image: url("../../../src/images/search.png");
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+/*End Search*/
+.plus {
+  display: inline-block;
+  background-image: url("../../../src/images/add-new-small.png");
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  border: 1px solid #f0f0f6;
 }

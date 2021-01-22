@@ -55,12 +55,19 @@ export default function students() {
     ]
     return (
         <div className="students-container">
-            {/* <div className="filter">
+            <div className="filter">
+                <div className="dropdown">
+                    <div className="dropdown-text">Select Class</div>
+                    <div className="dropdown-icon"></div>
+                </div>
                 <div className="search-box">
                     <div className="search-box-text">Select Class</div>
                     <div className="search-box-icon"></div>
                 </div>
-            </div> */}
+                <div className="plus">
+                    <div className="plus-icon"></div>
+                </div>
+            </div>
             {Std.map(student =>{
                 return(
                     <div className="student">

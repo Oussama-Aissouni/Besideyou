@@ -1,5 +1,7 @@
 import React from 'react';
 import "./sideMenu.css";
+import SideNav, {NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
+import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 import bg_dash from "../../images/dashboard.png";
 import bg_std from "../../images/icons-students.png";
 import bg_ex from "../../images/icons-exams.png";
@@ -9,55 +11,76 @@ import bg_homew from "../../images/icons-homwork.png";
 
 export default function sideMenu() {
     return (
-        <div className="sideMenu ">
-                <div className="sideMenu-Header">
+        
+        <SideNav className="Sidenav">
+            <SideNav.Toggle />
+            <SideNav.Nav defaultSelected="Students">
+                <NavItem eventKey="Logo">
+                    <NavIcon className="icon">
                     <div className="image"></div>
-                    <div className="text">School name</div>
-                </div>
-                <div className="headings-Container">
-                    <ul>
-                        <li className="item">
-                            <div className="item-content">
-                                <div className="item-image" style={{backgroundImage: `url(${bg_dash})`}}></div>
-                                <a href="#" className="item-link" >Dashboard</a>
-                            </div> 
-                        </li>
-                        <li className="item">
-                            <div className="item-content">
-                                <div className="item-image" style={{backgroundImage: `url(${bg_std})`}}></div>
-                                <a href="#" className="item-link" >Students</a>
-                            </div> 
-                        </li>
-                        <li className="item">
-                            <div className="item-content">
-                                <div className="item-image" style={{backgroundImage: `url(${bg_tch})`}}></div>
-                                <a href="#" className="item-link">Teachers</a>
-                            </div> 
-                        </li>
-                        <li className="item">
-                            <div className="item-content">
-                                <div className="item-image" style={{backgroundImage: `url(${bg_ex})`}}></div>
-                                <a href="#" className="item-link">Exams</a>
-                            </div> 
-                        </li>
-                        <li className="item">
-                            <div className="item-content">
-                                <div className="item-image" style={{backgroundImage: `url(${bg_homew})`}}></div>
-                                <a href="#" className="item-link">Homework</a>
-                            </div> 
-                        </li>
-                        <li className="item">
-                            <div className="item-content">
-                                <div className="item-image" style={{backgroundImage: `url(${bg_fin})`}}></div>
-                                <a href="#" className="item-link">Finances</a>
-                            </div> 
-                        </li>
-                    </ul>
-                </div>
-                <div className="sideMenu-footer">
-                    <div className="sideMenu-footer-text ">New action</div>
-                    <div className="sideMenu-footer-sign">+</div>
-                </div>
-            </div>
+                    </NavIcon>
+                    <NavText>
+                        School Name
+                    </NavText>
+                </NavItem>
+                <NavItem eventKey="Dashboard">
+                    <NavIcon>
+                        <div className="item-image" style={{backgroundImage: `url(${bg_dash})`}}></div>
+                    </NavIcon>
+                    <NavText>
+                        Dashboard
+                    </NavText>
+                </NavItem>
+                <NavItem eventKey="Students">
+                    <NavIcon>
+                        <div className="item-image" style={{backgroundImage: `url(${bg_std})`}}></div>
+                    </NavIcon>
+                    <NavText>
+                        Students
+                    </NavText>
+                </NavItem>
+                <NavItem eventKey="Teachers">
+                    <NavIcon>
+                        <div className="item-image" style={{backgroundImage: `url(${bg_tch})`}}></div>
+                    </NavIcon>
+                    <NavText>
+                        Teachers
+                    </NavText>
+                </NavItem>
+                <NavItem eventKey="Exams">
+                    <NavIcon>
+                        <div className="item-image" style={{backgroundImage: `url(${bg_ex})`}}></div>
+                    </NavIcon>
+                    <NavText>
+                        Exams
+                    </NavText>
+                </NavItem>
+                <NavItem eventKey="Homework">
+                    <NavIcon>
+                        <div className="item-image" style={{backgroundImage: `url(${bg_homew})`}}></div>
+                    </NavIcon>
+                    <NavText>
+                        Homework
+                    </NavText>
+                </NavItem>
+                <NavItem eventKey="Finances">
+                    <NavIcon>
+                        <div className="item-image" style={{backgroundImage: `url(${bg_fin})`}}></div>
+                    </NavIcon>
+                    <NavText>
+                        Finances
+                    </NavText>
+                </NavItem>
+                {/* <NavItem eventKey="Finances">
+                    <NavText>
+                    <div className="sideMenu-footer">
+                        <div className="sideMenu-footer-text ">New action</div>
+                        <div className="sideMenu-footer-sign">+</div>
+                    </div>
+                    </NavText>
+                </NavItem> */}
+            </SideNav.Nav>
+        </SideNav>
+        
     )
 }
