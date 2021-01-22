@@ -1,0 +1,87 @@
+.Infos-container {
+  position: absolute;
+  top: 49px;
+}
+.Infos-data {
+  margin: 50px 0px 20px 0px;
+}
+.Photo {
+  display: flex;
+  justify-content: center;
+}
+.Student-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: #ecedf3;
+}
+.add {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  border-radius: 20px;
+  border: solid 2px #ffffff;
+  background-image: linear-gradient(to left, #9bf1bb, #8de5ae);
+  text-align: center;
+}
+.Student-name {
+  text-align: center;
+}
+.Infos-navbar {
+  display: flex;
+  margin: auto;
+}
+.Infos-list {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+.Infos-list > li {
+  display: flex;
+  border-left: 1px solid rgba(21, 26, 59, 0.5);
+  border-top: 1px solid rgba(21, 26, 59, 0.5);
+  border-bottom: 1px solid rgba(21, 26, 59, 0.5);
+  cursor: pointer;
+  width: 92px;
+  height: 40px;
+  justify-content: center;
+}
+.Infos-list > li:last-child {
+  border-right: 1px solid rgba(21, 26, 59, 0.5);
+}
+.Infos-list > li > .link {
+  margin-top: 5px;
+  text-decoration: none;
+  color: rgba(21, 26, 59, 0.5);
+}
+.Infos-forms {
+}
+.ac {
+  background-color: aqua;
+}
+@media (min-width: 1200px) {
+  .Infos-container {
+    width: 55%;
+    height: 90%;
+    left: 615px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .Infos-container {
+    width: fit-content;
+    height: 90%;
+    left: 550px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .Infos-container {
+    width: fit-content;
+    height: 90%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .Infos-container {
+    width: fit-content;
+    height: 90%;
+  }
+}

@@ -1,0 +1,131 @@
+.students-container {
+  position: absolute;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* .filter {
+  width: 416px;
+  height: 56px;
+}
+.search-box {
+  display: flex;
+  width: 172px;
+  height: 32px;
+  border: 1px solid black;
+  margin: 11px 12px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.search-box-text {
+  margin: 8px 12px;
+  font-size: 14px;
+}
+.search-box-icon {
+  background-image: url("../../images/dropdown-arrow.png");
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin: 4px;
+} */
+.student {
+  width: 99.8%;
+  height: 80px;
+  display: flex;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.student-image {
+  border-radius: 20px !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.student-infos {
+  width: fit-content;
+  height: fit-content;
+  align-self: center;
+}
+.student-class {
+  color: rgba(21, 26, 59, 0.5);
+}
+@media (min-width: 1200px) {
+  .students-container {
+    width: 26%;
+    left: 260px;
+    top: 49px;
+  }
+  .student-image {
+    width: 35px;
+    height: 35px;
+    margin: 20px 16px;
+  }
+  .student-name {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .student-class {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .students-container {
+    width: 24%;
+    left: 240px;
+    top: 49px;
+  }
+  .student-image {
+    width: 30px;
+    height: 30px;
+    margin: 25px 12px;
+  }
+  .student-name {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .student-class {
+    font-size: 13px;
+    font-weight: normal;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .students-container {
+    width: 24%;
+    left: 200px;
+    top: 49px;
+  }
+  .student-image {
+    width: 30px;
+    height: 30px;
+    margin: 25px 12px;
+  }
+  .student-name {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .student-class {
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .students-container {
+    width: 22%;
+    left: 180px;
+    top: 49px;
+  }
+  .student-image {
+    width: 25px;
+    height: 25px;
+    margin: 25px 10px;
+  }
+  .student-name {
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .student-class {
+    font-size: 11px;
+    font-weight: normal;
+  }
+}
+@media (max-width: 575.98px) {
+}

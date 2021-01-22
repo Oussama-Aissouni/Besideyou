@@ -9,8 +9,7 @@ import bg_homew from "../../images/icons-homwork.png";
 
 export default function sideMenu() {
     return (
-        <div>
-            <div className="sideMenu">
+        <div className="sideMenu ">
                 <div className="sideMenu-Header">
                     <div className="image"></div>
                     <div className="text">School name</div>
@@ -56,10 +55,9 @@ export default function sideMenu() {
                     </ul>
                 </div>
                 <div className="sideMenu-footer">
-                    <div className="sideMenu-footer-text">New action</div>
+                    <div className="sideMenu-footer-text ">New action</div>
                     <div className="sideMenu-footer-sign">+</div>
                 </div>
             </div>
-        </div>
     )
 }
