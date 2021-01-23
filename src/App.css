@@ -7,3 +7,23 @@
   padding: 0px;
   font-family: "poppins";
 }
+/* .App {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "header header header "
+    "sidemenu main right";
+}
+.App > .sidemenu {
+  grid-area: sidemenu;
+}
+.App > .header {
+  grid-area: header;
+}
+.App > .students {
+  grid-area: main;
+}
+.App > .infos {
+  grid-area: right;
+} */

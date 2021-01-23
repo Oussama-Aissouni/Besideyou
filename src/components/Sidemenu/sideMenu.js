@@ -8,13 +8,13 @@ import bg_ex from "../../images/icons-exams.png";
 import bg_fin from "../../images/icons-finances.png";
 import bg_tch from "../../images/icons-teachers.png";
 import bg_homew from "../../images/icons-homwork.png";
+import add from "../../images/add-new-small1.png";
 
 export default function sideMenu() {
     return (
-        
         <SideNav className="Sidenav">
             <SideNav.Toggle />
-            <SideNav.Nav defaultSelected="Students">
+            <SideNav.Nav className="SideNav_nav" defaultSelected="Students">
                 <NavItem eventKey="Logo">
                     <NavIcon className="icon">
                     <div className="image"></div>
@@ -71,16 +71,15 @@ export default function sideMenu() {
                         Finances
                     </NavText>
                 </NavItem>
-                {/* <NavItem eventKey="Finances">
+                <NavItem eventKey="Add_Action" className="NavItem">
+                    <NavIcon>
+                        <div className="item-image item-image-add" style={{backgroundImage: `url(${add})`}}></div>
+                    </NavIcon>
                     <NavText>
-                    <div className="sideMenu-footer">
-                        <div className="sideMenu-footer-text ">New action</div>
-                        <div className="sideMenu-footer-sign">+</div>
-                    </div>
+                        <div className="New-Action">New Action</div>
                     </NavText>
-                </NavItem> */}
+                </NavItem>
             </SideNav.Nav>
         </SideNav>
-        
     )
 }

@@ -22,8 +22,8 @@ export default function Infos() {
             <Router>
                 <div className="Infos-navbar">
                     <ul className="Infos-list">
-                        <li><Link to="/Details" className="link" /*className={active ? 'ac': false}  onClick={toggleClass}*/ >Details</Link></li>
-                        <li><Link to="/Absence" className="link" /*className={active ? 'ac': null}  onClick={toggleClass}*/ >Absence</Link></li>
+                        <li><Link to="/Details" className="link">Details</Link></li>
+                        <li><Link to="/Absence" className="link">Absence</Link></li>
                         <li><Link to="/Finance" className="link">Finance</Link></li>
                         <li><Link to="/Grades" className="link">Grades</Link></li>
                         <li><Link to="/Exams" className="link">Exams</Link></li>

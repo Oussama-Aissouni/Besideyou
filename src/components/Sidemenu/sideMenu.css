@@ -19,3 +19,12 @@
 .icon {
   margin-top: 40px !important;
 }
+.item-image-add {
+  background-position: center;
+}
+.Sidenav > .SideNav_nav > .NavItem {
+  height: 40px;
+  margin: 24px;
+  border-radius: 20px;
+  background-color: #8de5ae;
+}

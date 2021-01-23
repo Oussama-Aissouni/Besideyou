@@ -31,12 +31,18 @@
 .student-class {
   color: rgba(21, 26, 59, 0.5);
 }
-
+.filter {
+  border: 1px solid #f0f0f6;
+  height: 56px;
+  display: flex;
+}
 /*DropDown*/
 .dropdown {
   display: inline-block;
   width: 172px;
+  height: 32px;
   border: 1px solid #f0f0f6;
+  margin: 12px 8px 12px 12px;
 }
 .dropdown-text {
   display: inline-block;
@@ -53,7 +59,9 @@
 .search-box {
   display: inline-block;
   width: 172px;
+  height: 32px;
   border: 1px solid #f0f0f6;
+  margin: 12px 8px 12px 0px;
 }
 .search-box-text {
   display: inline-block;
@@ -69,8 +77,9 @@
 .plus {
   display: inline-block;
   background-image: url("../../../src/images/add-new-small.png");
-  width: 20px;
-  height: 20px;
+  width: 32px;
+  height: 32px;
   background-position: center;
   border: 1px solid #f0f0f6;
+  margin: 12px 8px 12px 0px;
 }
