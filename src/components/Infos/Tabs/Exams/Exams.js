@@ -41,21 +41,20 @@ const useStyles = makeStyles({
   }
   
   const rows = [
-    createData('Homework title','Subject','MA','20-12-2020','#e9ddfd','16.5'),
-    createData('Homework title','Subject','FR','20-12-2020','#fceeca','13.8'),
-    createData('Homework title','Subject','AR','20-12-2020','#daf0bc','13.5'),
-    createData('Homework title','Subject','EN','20-12-2020','#fce3d5','17.00'),
-    createData('Homework title','Subject','PH','20-12-2020','#f8d3ec','11.00'),
+    createData('Exam name','Subject','MA','20-12-2020','#e9ddfd','16.5'),
+    createData('Exam name','Subject','FR','20-12-2020','#fceeca','13.8'),
+    createData('Exam name','Subject','AR','20-12-2020','#daf0bc','13.5'),
+    createData('Exam name','Subject','EN','20-12-2020','#fce3d5','17.00'),
+    createData('Exam name','Subject','PH','20-12-2020','#f8d3ec','11.00'),
   ];
 export default function Exams() {
     const classes = useStyles();
     return (
-        
     <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="simple table">
             <TableHead >
                 <TableRow className={classes.TableRow}>
-                    <TableCell style={{color:"rgba(21, 26, 59, 0.5)"}}>Homework title</TableCell>
+                    <TableCell style={{color:"rgba(21, 26, 59, 0.5)"}}>Exams</TableCell>
                     <TableCell align="center" style={{color:"rgba(21, 26, 59, 0.5)"}}>Date</TableCell>
                     <TableCell align="right">Score</TableCell>
                 </TableRow>

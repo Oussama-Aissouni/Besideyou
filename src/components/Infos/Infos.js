@@ -1,6 +1,6 @@
 import React from 'react';
 import "./infos.css";
-import {BrowserRouter as Router , Switch , Route,Link } from 'react-router-dom';
+import {BrowserRouter as Router , Switch , Route,Link ,useLocation } from 'react-router-dom';
 import Details from './Tabs/Details/Details';
 import Absence from './Tabs/Absence/Absence';
 import Finance from './Tabs/Finance/Finance';
@@ -10,12 +10,13 @@ import Homework from './Tabs/Homework/Homework';
 import Attitude from './Tabs/Attitude/Attitude';
 
 export default function Infos() {
+    const path=window.location.pathname;
     return (
         <div className="Infos-container">
             <div className="Infos-data">
                 <div className="Photo">
                     <div className="Student-photo"></div>
-                    <div className="add">+</div>
+                    {path === '/'? <div className="add">+</div>: null }
                 </div>
                 <div className="Student-name">Student name</div>
             </div>
@@ -33,7 +34,7 @@ export default function Infos() {
                 </div>
                 <div className="Infos-forms">
                     <Switch>
-                        <Route path="/Details" component={Details}></Route>
+                        <Route path="/b" component={Details}></Route>
                         <Route path="/Absence" component={Absence}></Route>
                         <Route path="/Finance" component={Finance}></Route>
                         <Route path="/Grades" component={Grades}></Route>
