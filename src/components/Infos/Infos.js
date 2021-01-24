@@ -34,7 +34,7 @@ export default function Infos() {
                 </div>
                 <div className="Infos-forms">
                     <Switch>
-                        <Route path="/b" component={Details}></Route>
+                        <Route path="/Details" component={Details}></Route>
                         <Route path="/Absence" component={Absence}></Route>
                         <Route path="/Finance" component={Finance}></Route>
                         <Route path="/Grades" component={Grades}></Route>
